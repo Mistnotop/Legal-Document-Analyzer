@@ -1,4 +1,5 @@
 from pathlib import Path
+
 from pydantic_settings import BaseSettings
 
 
@@ -11,12 +12,13 @@ class Settings(BaseSettings):
     cors_origins: str = "http://127.0.0.1:5173,http://localhost:5173"
 
     @property
-    def cors_origin_list(self):
+    def cors_origin_list(self) -> list[str]:
         return [
             origin.strip()
             for origin in self.cors_origins.split(",")
             if origin.strip()
         ]
+
 
     class Config:
         env_file = ".env"

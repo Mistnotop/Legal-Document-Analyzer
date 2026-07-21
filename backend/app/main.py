@@ -27,3 +27,11 @@ async def root():
         "message": "Legal Document Analyzer API is running",
         "version": settings.app_version,
     }
+
+
+@app.get("/debug-cors")
+async def debug_cors():
+    return {
+        "cors_origins": settings.cors_origins,
+        "cors_origin_list": settings.cors_origin_list,
+    }
