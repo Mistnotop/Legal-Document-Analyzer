@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.env
+*.log
+app/uploads/*
+!app/uploads/.gitkeep
+app/saved_models/*.pkl
+app/saved_models/*.json
+app/saved_models/*.txt
+app/saved_models/*.png
+dataset/raw/contracts/
+dataset/raw/*.csv
+dataset/processed/*.csv
+dataset/splits/*.csv

@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / Vite
+node_modules/
+dist/
+frontend/dist/
+frontend/node_modules/
+
+# Environment
+.env
+backend/.env
+frontend/.env
+
+# Runtime files
+*.log
+backend/app/uploads/*
+!backend/app/uploads/.gitkeep
+
+# Model and dataset artifacts
+backend/app/saved_models/*.pkl
+backend/app/saved_models/*.json
+backend/app/saved_models/*.txt
+backend/app/saved_models/*.png
+backend/dataset/raw/contracts/
+backend/dataset/raw/*.csv
+backend/dataset/processed/*.csv
+backend/dataset/splits/*.csv
+
+# OS / editor
+.DS_Store
+Thumbs.db
