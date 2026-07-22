@@ -22,7 +22,6 @@ backend/app/uploads/*
 !backend/app/uploads/.gitkeep
 
 # Model and dataset artifacts
-backend/app/saved_models/*.pkl
 backend/app/saved_models/*.json
 backend/app/saved_models/*.txt
 backend/app/saved_models/*.png

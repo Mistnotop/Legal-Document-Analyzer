@@ -1,0 +1,34 @@
+VALIDATION
+
+                 precision    recall  f1-score   support
+
+     employment       0.93      0.93      0.93        15
+          lease       1.00      1.00      1.00        15
+             na       0.82      1.00      0.90        14
+          other       0.91      0.71      0.80        14
+    purchase&ma       0.82      1.00      0.90        14
+       security       0.93      0.93      0.93        15
+services&supply       0.88      0.64      0.74        11
+    shareholder       0.92      0.92      0.92        13
+
+       accuracy                           0.90       111
+      macro avg       0.90      0.89      0.89       111
+   weighted avg       0.90      0.90      0.90       111
+
+
+TEST
+
+                 precision    recall  f1-score   support
+
+     employment       0.93      0.93      0.93        15
+          lease       1.00      0.87      0.93        15
+             na       0.62      0.93      0.74        14
+          other       0.70      0.47      0.56        15
+    purchase&ma       0.87      0.87      0.87        15
+       security       0.76      0.87      0.81        15
+services&supply       0.90      0.82      0.86        11
+    shareholder       0.91      0.83      0.87        12
+
+       accuracy                           0.82       112
+      macro avg       0.84      0.82      0.82       112
+   weighted avg       0.83      0.82      0.82       112
