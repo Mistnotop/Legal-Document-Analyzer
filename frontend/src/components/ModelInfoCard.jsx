@@ -1,14 +1,24 @@
 import { HiOutlineCpuChip } from "react-icons/hi2";
 
 const classes = [
-  "employment",
-  "security",
-  "purchase&ma",
-  "services&supply",
-  "shareholder",
-  "other",
-  "lease",
-  "na",
+  { label: "credit_loan", description: "Credit & Loan Agreements" },
+  { label: "employment", description: "Employment Agreements" },
+  { label: "lease", description: "Lease & Rental Agreements" },
+  { label: "license_ip", description: "IP & Licensing Agreements" },
+  {
+    label: "merger_acquisition",
+    description: "Mergers & Acquisitions Agreements",
+  },
+  { label: "purchase_sale", description: "Purchase & Sale Agreements" },
+  { label: "service_supply", description: "Service & Supply Contracts" },
+  {
+    label: "settlement_release",
+    description: "Settlement & Release Agreements",
+  },
+  {
+    label: "shareholder_rights",
+    description: "Shareholder Rights & Governance",
+  },
 ];
 
 function formatLabel(label) {
@@ -42,18 +52,19 @@ function ModelInfoCard() {
         </div>
         <div className="rounded-md border border-slate-200 bg-slate-50 p-3">
           <p className="text-slate-500">Classes</p>
-          <p className="mt-1 font-semibold text-slate-950">8 document classes</p>
+          <p className="mt-1 font-semibold text-slate-950">9 document classes</p>
         </div>
         <div className="rounded-md border border-slate-200 bg-slate-50 p-3">
           <p className="text-slate-500">Test Accuracy</p>
-          <p className="mt-1 font-semibold text-slate-950">82.14%</p>
+          <p className="mt-1 font-semibold text-slate-950">92.81%</p>
         </div>
       </div>
 
       <div className="mt-4 flex flex-wrap gap-2">
-        {classes.map((label) => (
+        {classes.map(({ label, description }) => (
           <span
             key={label}
+            title={description}
             className="rounded-md border border-slate-200 bg-white px-2.5 py-1 text-xs font-medium text-slate-600"
           >
             {formatLabel(label)}
