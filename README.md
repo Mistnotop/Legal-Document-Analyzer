@@ -5,7 +5,7 @@ AI-powered contract classification app built with FastAPI, React, Vite, Tailwind
 ## Features
 
 - Paste legal text or upload PDF, DOCX, and TXT files.
-- Predicts one of 8 MCC document classes.
+- Predicts one of 9 MCC document classes.
 - Shows confidence scores, top predictions, and document preview.
 - Includes model metrics and generated evaluation artifacts.
 
@@ -14,7 +14,7 @@ AI-powered contract classification app built with FastAPI, React, Vite, Tailwind
 - Classifier: LinearSVC
 - Features: TF-IDF
 - Classes: employment, security, purchase&ma, services&supply, shareholder, other, lease, na
-- Current test accuracy: 82.14%
+- Current test accuracy: 92.18%
 
 ## Backend Setup
 
